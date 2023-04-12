@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact Me</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+</head>
+<body>
+    <nav>
+        <div class="logo">
+          <img src="./assets/images/logo.png" alt="logo" />
+        </div>
+        <ul class="nav-left">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="my-project.html">My Project</a></li>
+            <li><a href="contact-me.html" class="sub-menu">Contact</a></li>
+          </ul>
+          <ul class="nav-right">
+              <li>
+                <a href="contact-me.html">Contact Me</a>
+              </li>
+          </ul>
+          <div class="menu-toggle">
+            <input type="checkbox"/>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+      </nav>
+    <form class="main-cointainer">
+        <div >
+            <h1>Get in the touch</h1>
+            <div class="form">
+                <label for="name"> Name : </label>
+                <input id="name" type="text" placeholder="Put your name ..." />
+                <div>
+                        <label for="email" >Email : </label>
+                        <input id="email" type="text" placeholder="Put your email ..."/>
+                    </div>
+                    <div>
+                        <label for="phone">Phone Number : </label>
+                        <input id="phone" type="text" placeholder="Put your phone ..."/>
+                    </div>
+                <div class="select">
+                    <label for="subject" >Subject : </label>
+                    <select id="subject">
+                        <option>Let's Talk</option>
+                        <option>Let's Collaboration</option>
+                        <option>I am Hiring</option>
+                    </select>
+                    <span for="subject" class="triangle-down" ></span>
+                </div>
+                <div>
+                    <label for="message">Your Message : </label>
+                    <textarea id="message" placeholder="Put your Message ...."></textarea>
+                </div>
+            <div>
+            <div class="submit">
+                <button type="button" onclick="getData()">submit</button>
+            </div>
+            </div>
+        </div>
+    </form>
+</body>
+<script src="assets/js/script.js"></script>
+</html>

@@ -1,0 +1,495 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #dbdbdb !important;
+}
+/* navbar styling */
+/* 
+.logo {
+    padding: 20px;
+}
+.nav-left {
+    display: flex;
+    margin-right: 40px;
+}
+
+.nav-left li a {
+    cursor: pointer;
+    text-decoration: none;
+    color:#fe4e30 ;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+.sub-menu {
+    display: none;
+}
+
+.nav-left a:hover {
+    text-decoration: underline;
+}
+
+.nav-right {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 30px; 
+}
+.nav-right a {
+    background-color: black;
+    color: white;
+    padding: 5px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav-right a:hover{
+    background-color: #fe4e30;
+}
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+}
+.menu-toggle input {
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    top: -5px;
+    left: -6px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: #fe4e30;
+    margin-right: 20px;
+    transition: all 0.5s;
+}
+
+/* Hambuger menu  */
+/* .menu-toggle span:nth-child(2){
+    transform-origin: 0 0;
+}
+.menu-toggle input:checked ~ span:nth-child(2){
+    transform: rotate(45deg) translate(-1px,-1px);
+}
+.menu-toggle span:nth-child(4){
+    transform-origin: 0 100%;
+}
+.menu-toggle input:checked ~ span:nth-child(4){
+    transform: rotate(-45deg) translate(-1px,0);
+}
+.menu-toggle input:checked ~ span:nth-child(3){
+    opacity: 0;
+    transform: scale(0);
+} */
+
+/* @media screen and (max-width:640px) {
+    .nav-left {
+        position: fixed;
+        right: 0;
+        top: 0;
+        flex-direction: column;
+        height: 50%;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: #e9e9e4;
+        margin: 0;
+        transform: translateX(100%);
+        transition: all 1s;
+    }
+    .nav-left.slide{
+        opacity: 1;
+        transform: translateX(0);
+    }
+    .sub-menu {
+        display: flex;
+    }
+    .nav-right {
+        display: none;
+    }
+    .menu-toggle {
+        display: flex;
+    }
+    
+} */ 
+
+.btn-contact {
+    background-color: orangered!important;
+}
+
+.btn-contact:hover {
+    background-color: rgb(214, 58, 1)!important;
+}
+
+
+/* form styling  css*/
+
+.main-cointainer{
+    margin: auto;
+    width: 450px;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.main-cointainer h1 {
+    text-align: center;
+}
+
+.form div {
+    margin-top: 10px;
+}
+
+ 
+
+.form input,select {
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #dbdbdb;
+    box-sizing:border-box;
+    box-shadow: 0 2px 5px black;
+    background-color: aquamarine;
+}
+select {
+    appearance: none;
+    cursor: pointer;
+}
+input,select,textarea:focus{
+    outline: none;
+}
+.select{
+    display: grid;
+}
+
+.select::after{
+    content: "se";
+    width: 0.8em;
+    height: 0.5em;
+    background-color: var(--select-arrow);
+    clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+}
+
+.triangle-down {
+    justify-self: end;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top:8px solid #6d6a6a;
+    position: absolute;
+    margin-top: 45px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+.form textarea {
+    width: 100%;
+    border-radius: 5px;
+    resize: none;
+    padding: 10px;
+    margin-top: 10px;
+    height: 100px;
+    box-sizing:border-box;
+    border: 1px solid #dbdbdb;
+    box-shadow: 0 2px 5px black;
+    background-color: aquamarine;
+}
+
+label {
+    font-weight: bold;
+}
+
+button {
+    padding: 5px 40px;
+    border-radius: 15px;
+    border: none;
+    background-color: black;
+    color: white;
+    margin-top: 15px;
+    box-shadow: 0 2px 5px black;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #c0731c;
+}
+
+.submit button{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+/* index css */
+.main-card {
+    padding: 30px;
+    width: 75%;
+    border-radius: 8px;
+    margin: auto;
+    box-shadow: 0 0 15px grey;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
+}
+
+.container-content {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 10px;
+}
+
+.content-left {
+    width: 100%;
+    padding-top: 10px;
+    background-color: white;
+    text-align: justify;
+    margin-top: 60px;
+    margin-right: 40px;
+}
+
+.card-contact {
+    background-color: #000;
+    color: white;
+    padding: 5px 20px;  
+    border-radius: 15px;
+    text-decoration:none;
+    transition: 0.3s;
+}
+
+.card-contact:hover {
+    background-color: #c0731c;
+}
+.sosmed {
+   display: flex;
+}
+.sosmed img {
+    width: 40px;
+    padding: 5px;
+    margin: 20px 5px;
+}
+
+.photo-card {
+    width: 100%;
+    margin: auto;
+    border-radius: 30px;
+    box-shadow: 0 0 15px #aea4a4;
+    padding-bottom: 10px;
+    margin-top: 12px;
+    text-align: center;
+    background-color: aquamarine;
+}
+
+.photo-card img {
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+
+.content-right {
+    width: 70%;
+}
+
+@media screen and (max-width:768px) {
+    .container-content {
+        display: block;
+    }
+    .content-right {
+        margin: 30px auto;
+        width: 100%;
+    }
+    .sosmed {
+        justify-content: center;
+    }
+}
+/* my project css */
+
+.myproject-form {
+    width: 450px;
+    padding: 20px;
+    border-radius: 8px;
+    margin: auto;
+    margin-top: 50px;
+    box-sizing: border-box;
+}
+
+.myproject-form div{
+    margin-top: 10px;
+}
+
+.myproject-form input {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #dbdbdb;
+    box-sizing:border-box;
+    padding:8px;
+    background-color: aquamarine;
+    margin-top: 10px;
+}
+
+.myproject-form h1 {
+    text-align: center;
+}
+
+.myproject-form textarea {
+    width: 100%;
+    resize: none;
+    border-radius: 5px;
+    height: 100px;
+    border: 1px solid #dbdbdb;
+    box-sizing:border-box;
+    background-color: aquamarine;
+    margin-top: 10px;
+}
+
+.myproject-form hr {
+    border: 1px solid #dbdbdb;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    }
+
+.submit {
+    display: flex;
+}
+
+.action {
+    width: 100%;
+}
+
+.input-date {
+    display: flex;
+}
+
+.input-checkbox {
+    padding: 0px;
+}
+
+.input-checkbox div{
+    display: flex; 
+    width: 100%;
+    text-align: center;
+    padding: 0px 10px;
+    margin: auto;
+}
+
+.input-checkbox input{
+    box-shadow: none;
+    width: 20px;
+    margin-right: 15px;
+    margin-top: 5px;
+}
+
+.myproject-list {
+    background: #fff;
+    border: 1px solid #dbdbdb;
+}
+
+
+.myproject-list h2 {
+    text-align: center;
+}
+
+.myproject-cardlist {
+    display: flex;
+    flex-wrap: wrap ;
+}
+
+.myproject-card {
+    width: 350px;
+    border: 1px solid #dbdbdb;
+    padding: 30px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #aea4a4;   
+}
+.myproject-card a {
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+}
+.myproject-card img{
+    width: 100%;    
+}
+
+.desc-project {
+    text-align: justify;
+}
+
+.action {
+    width: 100%;
+    display: flex;
+    margin: 10px;
+    text-align: center;
+}
+
+.tech-used {
+    display: flex;
+}
+
+.tech-used img {
+    width: 30px;
+    margin: 10px;
+}
+@media screen and (max-width:640px) {
+    .myproject-cardlist {
+        justify-content: center;
+        margin-top: 20px;
+    }
+}
+
+/* detail project styling */
+.detail-container {
+    background: #fff;
+    margin: auto;
+    
+}
+
+.header-detail {
+    display: flex;
+    justify-content: center;
+}
+
+.detail-photo {
+    object-fit: cover;
+    border-radius: 20px;
+    width: 400px;
+    height: 400px;
+    margin: 30px;
+}
+.technologies-used div{
+    display: flex; 
+    width: 100%;
+    text-align: center;
+    padding: 0px 10px;
+    margin: 5px;
+}
+
+.technologies-used p {
+    margin-left: 10px;
+}
+.detail-desc {
+    padding: 20px;
+    margin: 30px;
+}
+.duration img {
+    margin-top: 10px;
+    margin-right: 10px;
+   
+}
+
+
+
