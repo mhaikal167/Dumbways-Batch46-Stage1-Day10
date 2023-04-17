@@ -1,0 +1,194 @@
+
+.navbar {
+    background: linear-gradient(to right,#6A82FB ,black);
+}
+
+.navbar .navbar.nav .nav-link{
+    color: #fff;
+}
+
+.text-area {
+    resize: none;
+    height: 120px;
+}
+
+.form-check {
+    width: 20%;
+    margin: 20px 30px;
+}
+
+.card {
+    width: 18rem;
+    margin-bottom: 1.5rem;
+    border: none;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
+    height: 20rem;
+  }
+  
+  .card-img-top {
+    height: 10rem;
+    object-fit: cover;
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .card-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* number of lines to show */
+    -webkit-box-orient: vertical;
+  }
+  
+  .card-text.show-more {
+    white-space: initial;
+    -webkit-line-clamp: initial;
+  }
+  
+  .show-more-btn {
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  
+  .d-flex span {
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    color: #6c757d;
+  }
+  
+  .d-flex span i {
+    margin-right: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  .d-flex span .bi-collection {
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+    color: #6c757d;
+  }
+  
+  .d-flex span .bi-speedometer {
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+    color: #6c757d;
+  }
+  
+  .btn-primary,
+  .btn-secondary {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .btn-primary:hover,
+  .btn-primary:focus {
+    background-color: #0069d9;
+    border-color: #0062cc;
+  }
+  
+  .btn-secondary {
+    background-color: #6c757d
+ }
+ .btn-secondary:hover,
+.btn-secondary:focus {
+  background-color: #5a6268;
+  border-color: #545b62;
+}
+
+.mt-auto {
+  margin-top: auto;
+}
+
+.pt-2 {
+  padding-top: 0.5rem;
+}
+
+
+.d-flex.flex-column .mb-2:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 576px) {
+  .card-img-top {
+    height: 8rem;
+  }
+}
+.card-tech img{
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+}
+  
+.main-card {
+    padding: 30px;
+    width: 75%;
+    border-radius: 8px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
+}
+@media screen and (min-width:550px) {
+    .main-card {
+    flex-wrap: wrap;
+    }
+}
+.cv-icon {
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.photo-card {
+    width: 100%;
+    margin: auto;
+    border-radius: 30px;
+    box-shadow: 0 0 15px #aea4a4;
+    padding-bottom: 10px;
+    margin-top: 12px;
+    text-align: center;
+    background-color: aquamarine;
+}
+
+.sosmed img {
+    width: 50px;    
+    margin: 20px 5px;
+}
+
+.card {
+    width: 350px;
+    margin: 20px;
+}
+
+.my-project-list{
+    width: 100%;
+    display: flex;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(13, 45, 80, 0.25);
+}
+  
+.form .form-control ,.form .form-select {
+    border: none;
+    border-bottom: 2px solid #54B4D3;
+    resize: none;
+  }
+  
+.form .form-control:focus ,.form .form-select:focus {
+    box-shadow: none;
+  }
+  
+
