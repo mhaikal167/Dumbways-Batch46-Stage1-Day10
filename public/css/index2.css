@@ -1,10 +1,13 @@
 
+.bg-basic{
+  background: grey;
+}
 .navbar {
     background: linear-gradient(to right,#6A82FB ,black);
 }
 
 .navbar .navbar.nav .nav-link{
-    color: #fff;
+    color: #fff !important;
 }
 
 .text-area {

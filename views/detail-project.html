@@ -9,77 +9,59 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 </head>
-<body style="background-color:grey;">
+<body class="bg-basic">
     <!-- navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container">
-            <a class="navbar-brand" href="/">
-              <img  src="/public/images/logo.png" alt="logo">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-              <li class="nav-item">
-                <a class="nav-link  active" aria-current="page" href="/">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/add-project">Add Project</a>
-              </li>
-            </ul>
-              <a class="btn btn-outline-light" href="/contact-me">Contact Me</a>
-          </div>
+      <div class="container">
+          <a class="navbar-brand" href="/">
+            <img src="/public/images/logo.png" alt="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-4 mt-3 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/add-project">Add Project</a>
+            </li>
+          </ul>
+            <a class="btn btn-outline-light ms-4 text-info px-4" href="/contact-me">Contact Me</a>
         </div>
-      </nav>
+      </div>
+    </nav>
       <!-- container detail project -->
       <div class="container m-auto my-5 p-5 border border-info-subtle m-4 shadow rounded bg-dark text-light">
-        <h1 class="d-flex justify-content-center">{{.Project.Title}}</h1>
-        <div class="header-detail bg-dark">
-            <img class="detail-photo " src="/public/images/example-post.png" alt="detail-img">
-            <div class="detail-desc">
+        <h1 class="d-flex justify-content-center my-5">{{.Project.Title}}</h1>
+        <div class="header-detail bg-dark d-flex-lg">
+            <img class="detail-photo bg-dark " src="/public/images/example-post.png" alt="detail-img">
+            <div class="detail-desc m-5">
                 <!-- duration -->
-                <div class="duration">
+                <div class="duration my-4">
                     <label>Duration</label>
                     <div class="d-flex m-2">
                         <p class="me-3"><i class="bi bi-calendar me-3"></i>{{.Project.Start}} - {{.Project.End}} </p>
                     </div>
                     <div class="d-flex m-2">
-                        <p class="me-3"><i class="bi bi-clock me-3"></i>{{.Project.Duration}} hours</p>
+                        <p class="me-3"><i class="bi bi-clock me-3"></i>{{.Project.Duration}} days</p>
                     </div>
                 </div>
                 <!-- technologies -->
                 <div class="technologies my-2">
                     <label class="form-label fw-bold">Technologies</label>
                     <div class="col-12 d-flex flex-wrap ">
-                        {{if .Project.Node}}
-                        <div class="d-flex justify-content-center mx-4 p-2">
-                            <img style="width: 50px; height: 50px;" src="/public/images/nodejs.png">
-                            <p class="p-2">Node Js</p>
-                          </div>
-                          {{end}}
+                      {{range $i, $tech := .Project.Techno}}
 
-                    {{if .Project.React}}
+                      {{if ne . ""}}
                       <div class="d-flex justify-content-center mx-4 p-2">
-                        <img style="width: 50px; height: 50px;" src="/public/images/atom.png">
-                        <p class="p-2">React Js</p>
+                        <img style="width: 50px; height: 50px;" src="/public/images/{{$tech}}.png">
+                        <p class="p-3 text-capitalize">{{$tech}}</p>
                       </div>
                       {{end}}
-                    </div>
-                    <div class="col-12 d-flex flex-wrap">
-                        {{if .Project.Next}}
-                        <div class="d-flex justify-content-center mx-4 p-2">
-                            <img style="width: 50px; height: 50px;" src="/public/images/next-js.png">
-                            <p class="p-2">Next Js</p>
-                          </div>
-                          {{end}}
-
-                          {{if .Project.Typesc}}
-                      <div class="d-flex justify-content-center mx-4 p-2">
-                        <img style="width: 50px; height: 50px;" src="/public/images/typescript.png">
-                        <p class="p-2">TypeScript</p>
-                      </div>
-                      {{end}}
+          
+                        {{end}}
                     </div>
                   </div>
             </div>

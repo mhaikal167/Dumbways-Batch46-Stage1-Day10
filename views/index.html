@@ -7,7 +7,6 @@
   <link rel="stylesheet" type="text/css" href="/public/css/index2.css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-  
 </head>
 <body style="background-color: grey;">
   <nav class="navbar navbar-expand-lg navbar-dark">
@@ -19,7 +18,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-4 mt-3 mt-lg-0">
           <li class="nav-item">
             <a class="nav-link  active" aria-current="page" href="/">Home</a>
           </li>
@@ -27,16 +26,16 @@
             <a class="nav-link" href="/add-project">Add Project</a>
           </li>
         </ul>
-          <a class="btn btn-outline-light" href="/contact-me">Contact Me</a>
+          <a class="btn btn-outline-light text-info ms-4 px-4" href="/contact-me">Contact Me</a>
       </div>
     </div>
   </nav>
   <!-- content -->
   <div id="main-card" class="main-card border border-info-subtle shadow rounded bg-dark">
     <div class="d-flex flex-lg-row flex-column">
-    <div class="w-100 content-left">
-      <h2 class="my-4" style="color:#c0731c ;">Hi Welcome to Hachiman</h1>
-        <p class="text-light">
+    <div class="w-100 ">
+      <h2 class="my-4" style="color:#c0731c;">Hi Welcome to Hachiman</h1>
+        <p class="m-0 p-0 text-justify text-light">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia
           temporibus mollitia impedit repudiandae? Non, assumenda! Dignissimos
           sed, accusamus aspernatur itaque at ut perferendis consequatur dolorem
@@ -45,33 +44,40 @@
           consequuntur nesciunt optio corrupti quaerat error porro officiis.
           Cupiditate, vitae!
         </p>
+        
         <br/>
-        <a class="btn btn-outline-light" href="contact-me.html"> contact </a>
-        <div class="d-flex">
+        <div class="d-flex align-items-center m-2">
+          <a class="btn btn-outline-primary text-white px-4 inline-block" href="contact-me.html"> Contact </a>
           <br/>
-          <p class="mt-3 ms-2 text-light">download CV</p>
-          <a href="#"><img src="/public/images/download.png" class="cv-icon bg-light border rounded-circle" alt="linkedin" /></a>
+          <p class=" mt-4 ms-2 text-light">download CV</p>
+          <a href="#" class=" ms-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="24" fill="white" class="bi bi-download" viewBox="0 0 16 16">
+              <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+              <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+            </svg>
+          </a>
         </div>
-        <div class="d-flex justify-content-center sosmed">
-          <a href="https://www.linkedin.com/in/muhammad-hafidz-haiqal-putra-6abb3725b/" target="_blank"  class="me-3">
-            <img src="/public/images/linkedin.png" alt="linkedin" class="border border-light-subtle rounded-circle bg-light" />
-          </a>
-          <a href="https://www.instagram.com/kaabiee/" target="_blank"  class="me-3">
-            <img src="/public/images/instagram.png"  class="border border-light-subtle rounded-circle bg-light"  alt="instagram" />
-          </a>
-          <a href="https://www.facebook.com/GansGils/" target="_blank"  class="me-3">
-            <img src="/public/images/facebook.png" class="border border-light-subtle rounded-circle bg-light"  alt="facebook" />
-          </a>
-          <a href="https://www.twitter.com" target="_blank"  class="me-3">
-            <img src="/public/images/twitter.png" class="border border-light-subtle rounded-circle bg-light"  alt="twitter" />
-          </a>
+        <div class="d-flex justify-content-center">
+        <!-- Ikon LinkedIn -->
+          <a href="#" class="me-3 btn btn-outline-primary mb-4"><i class="bi bi-linkedin" style="font-size: 33px;"></i></a>
+        <!-- Ikon Facebook -->
+        <a href="#" class="me-3 btn btn-outline-primary mb-4"><i class="bi bi-facebook" style="font-size: 33px;"></i> </a>
+
+        <!-- Ikon Twitter -->
+        <a href="#" class="me-3 btn btn-outline-primary mb-4"><i class="bi bi-twitter" style="font-size: 33px;"></i> </a>
+
+        <!-- Ikon Instagram -->
+        <a href="#" class="me-3 btn btn-outline-primary mb-4"><i class="bi bi-instagram " style="font-size: 33px;"></i> </a>
+
+
         </div>
     </div>
+    
     <div class="d-flex justify-content-end ">
-      <div id="photo-card" class="photo-card">
+      <div id="photo-card" class="card bg-info">
         <img src="/public/images/pp.jpg" alt="photo aku" class="rounded img-photo img-fluid" />
-        <div >
-          <p class="d-flex justify-content-center mt-3">
+        <div class="card-body">
+          <p class="d-flex justify-content-center mt-3 fw-bold ">
             Muhammad Hafidz Haiqal Putra
           </p>
           <p class="d-flex justify-content-center">Fullstack Developer</p>
@@ -80,67 +86,69 @@
     </div>
   </div>
 </div>
+
 <!-- my project list -->
 <div class="border border-info-subtle m-4 shadow rounded bg-dark">
   <h2 class="d-flex justify-content-center text-light pt-5">My Project</h2>
   <div class="my-project-list d-flex flex-wrap">
     {{range $index, $data := .Project}}
-    <div class="card m-auto my-5">
+    <div class="card m-auto my-5  p-1">
       <img src="/public/images/example-post.png" class="card-img-top" alt="...">
       <div class="card-body d-flex flex-column">
-          <a class="card-title text-decoration-none" href="/detail-project/{{$index}}">{{$data.Title}}</a>
-        <div class="d-flex ">
-          <span class="me-3"><i class="bi bi-clock"></i> {{$data.Duration}} hours</span>
-          <span class="me-3"><i class="bi bi-calendar"></i> {{$data.Start}}</span>
+          <div style="height: 60px;">
+            <a class="card-title text-decoration-none" href="/detail-project/{{.Id}}" >{{.Title}}</a>
+          </div>
+          <hr class="line"/>
+        <div class="d-flex " >
+          <span class="me-3"><i class="bi bi-clock"></i> {{.Duration}} days</span>
+          <span class="me-3"><i class="bi bi-calendar"></i> {{.Start}}</span>
         </div>
-        <div>
-          <p class="card-text">{{$data.Desc}} </p>
+        <div style="height: 120px;">
+          <p class="card-text text-justify"> {{.Desc}} </p>
         </div>
-        <a class="show-more-btn">Show More</a>
-        <div class="d-flex flex-column card-tech">
+        <div class="d-flex flex-column card-tech ">
           <div class="d-flex">
-            {{if .Node}}
-            <img src='/public/images/nodejs.png'/>
+            {{range $i, $tech := .Techno}}
+
+            {{if ne . ""}}
+            <img src='/public/images/{{$tech}}.png'/>
             {{end}}
 
-            {{if .React}}
-            <img src='/public/images/atom.png' >
-            {{end}}
-
-            {{if .Next}}
-            <img src='/public/images/next-js.png'>
-            {{end}}
-
-            {{if .Typesc}}
-            <img src='/public/images/typescript.png'>
-            {{end}}
+              {{end}}
           </div>
         </div>
-        <div class="m-auto">
-          <a href="/edit-project/{{$index}}" class="btn btn-dark px-4 me-3">Edit</a>
-          <a href="/delete-project/{{$index}}" class="btn btn-dark px-4 ">Delete</a>
+        <hr class="line"/>
+        <div class="d-flex align-items-end justify-content-center">
+          <a href="/edit-project/{{.Id}}" class="btn btn-dark px-5 me-3">Edit </a>
+          <button type="button" class="btn btn-dark px-5" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            Delete
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">Warning</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Are you sure to delete this data?
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <a class="btn btn-primary" href="/delete-project/{{.Id}}">Understood</a>
+          </div>
         </div>
       </div>
     </div>
     {{end}}
   </div>
+ 
 </div>
   <script src="/public/js/script.js"></script>
-  <script>
-    const showMoreBtns = document.querySelectorAll('.show-more-btn');
-    showMoreBtns.forEach((btn) => {
-      btn.addEventListener('click', () => {
-        const cardBody = btn.parentElement;
-        const cardText = cardBody.querySelector('.card-text');  
-        cardText.classList.toggle('show-more');
-        if (cardText.classList.contains('show-more')) {
-          btn.textContent = 'Show Less';
-        } else {
-          btn.textContent = 'Show More';
-        }
-      });
-    });
-    </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 </html>
