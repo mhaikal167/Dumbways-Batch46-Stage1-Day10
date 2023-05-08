@@ -95,22 +95,6 @@ label {
     font-weight: bold;
 }
 
-button {
-    padding: 5px 40px;
-    border-radius: 15px;
-    border: none;
-    background-color: black;
-    color: white;
-    margin-top: 15px;
-    box-shadow: 0 2px 5px black;
-    font-size: 18px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #c0731c;
-}
-
 .submit button{
     display: flex;
     justify-content: space-between;
