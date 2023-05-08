@@ -96,6 +96,8 @@ func loginPage(c echo.Context) error {
 	delete(sess.Values, "status")
 	delete(sess.Values, "message")
 
+	sess.Save(c.Request(),c.Response())
+
 	tmpl, err := template.ParseFiles("views/login.html")
 	if err != nil {
 		return c.JSON(http.StatusInternalServerError, map[string]string{"message": err.Error()})
